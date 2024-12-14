@@ -1,0 +1,4 @@
+# flyctl launch added from .gitignore
+**/pds.env
+**/.DS_Store
+fly.toml

@@ -7,19 +7,19 @@ app = 'pds-gruen-lol'
 primary_region = 'ewr'
 
 [build]
-  image = 'ghcr.io/bluesky-social/pds:0.4'
+image = 'ghcr.io/bluesky-social/pds:0.4'
 
 [[mounts]]
-  source = 'pds_data'
-  destination = '/data'
+source = 'pds_data'
+destination = '/data'
 
 [http_service]
-  internal_port = 3000
-  force_https = true
-  auto_start_machines = true
-  min_machines_running = 0
+internal_port = 3000
+force_https = true
+auto_start_machines = true
+min_machines_running = 0
 
 [[vm]]
-  cpu_kind = 'shared'
-  cpus = 1
-  memory_mb = 512
+cpu_kind = 'shared'
+cpus = 1
+memory_mb = 256
